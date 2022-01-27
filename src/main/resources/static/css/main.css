@@ -1,0 +1,142 @@
+/*추가 reset*/
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    color: #000;
+}
+button, input {
+    outline: none;
+    border: none;
+    color: #000;
+}
+
+/*common*/
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.wrap {
+    font-size: 15px;
+}
+
+/*header style*/
+header {
+    /* background: aquamarine; */
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    border-bottom: 3px solid #000;
+    box-sizing: content-box;
+}
+
+.inner-header {
+    width: 60%;
+    background: rgb(245, 153, 153);
+    padding: 10px 50px;
+    margin: 0 auto;
+
+}
+
+.inner-header .logo {
+    height: 100px;
+    float: left;
+}
+.inner-header .logo a img {
+    height: 100px;
+}
+
+.inner-header .title {
+    /* background: red; */
+    float: left;
+    width: 30%;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 20px 0 0;
+    margin-left: 120px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+
+.inner-header .gnb {
+    /* background: blue; */
+    float: right;
+    width: 30%;
+    height: 100px;
+    font-size: 25px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inner-header .gnb ul {
+    /* background: lightgray; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.inner-header .gnb ul li:first-child {
+    margin-right: 30px;
+}
+
+.inner-header .gnb .report {
+    /* background: yellow; */
+}
+
+.underbox {
+    /* header 자리 채우기용 (header 높이 120px + border 2px -> 28px정도 자동으로 바텀 마진 */
+    /* background: brown; */
+    width: 100%;
+    height: 150px;
+}
+
+/* 게시글 목록 (table) style*/
+.article-box {
+    width: 70%;
+    margin: 0 auto;
+    border: 3px solid blue;
+}
+.article-box .article-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid red;
+}
+
+.article-box .article-table th {
+    font-weight: bold;
+}
+.article-box .article-table th,td {
+    border: 2px solid blueviolet;
+    padding: 10px 50px;
+    text-align: center;
+    /* background: yellow; */
+}
+
+/* btn-box style*/
+.btn-box {
+    width: 20%;
+    /* background: yellow; */
+    /* border: 2px solid #000; */
+
+    float: right;
+    margin-top: 28px;
+    margin-right: 50px;
+}
+
+/* page-box style */
+
+.page-box {
+    /* background: blue; */
+    width: 50%;
+    margin: 60px auto 30px;
+    text-align: center;
+}
+
+.page-box .btn-group {
+    background: lightgray;
+}
